@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <head>
+        <h1>
+            Stock Quote
+        </h1>
+    </head>
+    <body>
+        <h1>
+            {{name}} with symbol {{symbol}} is currently trading at {{price}}
+            <form action="/buy">
+            <button class="btn btn-primary" type="submit">Buy</button>
+            </form>
+        </h1>
+    </body>
+{% endblock %}
